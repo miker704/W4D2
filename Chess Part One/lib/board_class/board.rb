@@ -11,8 +11,7 @@ class Board
 
         def [](pos)
             x,y = pos
-            return @grid[pos[0]][pos[1]]
-            # return @grid[x][y]
+            return @grid[x][y]
         end
 
         def []=(pos,value)
