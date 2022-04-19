@@ -1,6 +1,5 @@
 
 module Slideable
-    # CONSTANT directions for a said piece
   
     def horizontal_dirs
 
@@ -13,10 +12,12 @@ module Slideable
 
 
     def moves()
-
+            # 
+            
     end
     
     
+    # CONSTANT directions for a said piece
     
     private
         HORIZONTAL_DIRS=[1,0]
