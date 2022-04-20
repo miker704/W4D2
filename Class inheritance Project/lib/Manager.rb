@@ -13,7 +13,8 @@ class Manager < Employee
     def bonus(multiplier)
         employee_sum=0
         @assigned_emps.each do |emp|
-            if emp.employee_title.include?("Manager") || emp.employee_title.include?("Founder")
+            # if emp.employee_title.include?("Manager") || emp.employee_title.include?("Founder")
+            if emp.is_a?(Manager)
                     employee_sum+= emp.salary + emp.bonus(1)
             else
                 employee_sum+=emp.salary
