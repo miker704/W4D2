@@ -25,17 +25,19 @@ module Slideable
         end
 
         directions.each do |direction|
-            moveset << [direction[0] +curr_x], direction[1] + curr_y]
-            while (0..7).to_a.include?(moveset.last[0]) && (0..7).to_a.include?(moveset.last[1]) 
-                 moveset << [direction[0] +moveset.last[0]], direction[1] + moveset.last[1]]
+            subarr = []
+            subarr << [direction[0] +curr_x], direction[1] + curr_y]
+            while (0..7).to_a.include?(subarr.last[0]) && (0..7).to_a.include?(subarr.last[1]) 
+                 subarr << [direction[0] +subarr.last[0]], direction[1] + subarr.last[1]]
 
              end
             
         end
         
-        moveset.reject! do |position|
+        subarr.reject! do |position|
              !(0..7).to_a.include?(position[0]) || !(0..7).to_a.include?(position[1])
         end
+        moveset<< subarr
 
         
     end

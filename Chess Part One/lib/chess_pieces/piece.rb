@@ -39,7 +39,7 @@ class Piece
                         valid_moves_arr += direction[0..i]
                         break
                     elsif self.color == board.[pos].color 
-                        valid_moves_arr += direction[0...i]
+                         valid_moves_arr += direction[0...i]
                         break
                     end
                     valid_moves_arr += direction

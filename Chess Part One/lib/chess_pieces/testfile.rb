@@ -57,8 +57,13 @@
     # moves
 def check
     valid_moves_arr =[]
-    current_position = "a"
-    directions = [[[5,5], "a", [7,5]], [[3,5], "a", [1,5], [0,5]], [[4,6], [4,7], "b"] ,[[4,4], [4,3], [4,2], "a", [4,0]]]
+    current_position = [7,1]
+    directions = [
+    [[5,5], [7,1], [7,5]], 
+    [[3,5], "a", [1,5], [0,5]], 
+    [[4,6], [4,7], "b"] ,
+    [[4,4], [4,3], [4,2], "a", [4,0]]
+]
     directions.each do |direction|
         if !direction.include?(current_position)
             valid_moves_arr << direction

@@ -38,5 +38,9 @@ class Knight < Piece
     def move_into_check?(end_pos)
 
     end
+    def move_diff()
+      KNIGHT_MOVES = [[2,1], [1,2], [-1,2], [-2,1] ,[-2,-1] ,[-1,-2 ],[1,-2], [2,-1]]
+        return KNIGHT_MOVES
+    end
 
 end
