@@ -2,11 +2,11 @@
 module Slideable
   
     def horizontal_dirs
-
+        return HORIZONTAL_DIRS
     end
 
     def diagonal_dirs
-
+        return DIAGONAL_DIRS
     end
 
 
@@ -20,9 +20,9 @@ module Slideable
     # CONSTANT directions for a said piece
     
     private
-        HORIZONTAL_DIRS=[1,0]
-        DIAGONAL_DIRS=[1,1]
-        VERTICAL_DIRS=[0,1]
+        HORIZONTAL_DIRS=[]
+        DIAGONAL_DIRS=[]
+        VERTICAL_DIRS=[]
 
         def mov_dirs
 
