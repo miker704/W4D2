@@ -5,7 +5,7 @@ class Piece
     
     attr_writer :pos
     attr_reader :color
-    def initialize(color,board,pos)
+    def initialize(color =:NULL,board=nil,pos=nil)
         @color=color
         @board=board
         @pos=pos
@@ -20,7 +20,7 @@ class Piece
     end
 
     def empty?
-            return true if 
+            return false
     end
     
     def valid_moves()
@@ -30,7 +30,7 @@ class Piece
     def pos=(val)
 
     end
-
+    # check if symbol has changed or not 
     def Symbol
 
     end

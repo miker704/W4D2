@@ -1,12 +1,17 @@
 
 require 'byebug'
+require '../chess_pieces/null_piece.rb'
 class Board 
 
     attr_accessor :grid
         def initialize()
             
-            @grid=Array.new(8){Array.new(8).fill(:NULL)}
+
+            
+            null_piece = NullPiece.instance
+            @grid=Array.new(8){Array.new(8).fill(null_piece.symbol)}
             self.fillup
+            # @grid.each{|row| puts row.join("|")}
         end
 
         def [](pos)
@@ -31,9 +36,9 @@ class Board
         end
 
         def fillup
-            @grid[0].fill(:somepiece)
-            @grid[1].fill(:PAWNS)
-            @grid[7].fill(:somepiece)
-            @grid[6].fill(:PAWNS)
+            @grid[0].fill(:SP_W)
+            @grid[1].fill(:PA_W)
+            @grid[7].fill(:SP_B)
+            @grid[6].fill(:PA_B)
         end
 end
