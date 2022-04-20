@@ -26,7 +26,7 @@ class Knight < Piece
     end
 
     def pos=(val)
-
+        
     end
     # check if symbol has changed or not 
     def Symbol

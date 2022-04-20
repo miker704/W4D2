@@ -1,3 +1,13 @@
+require_relative "display.rb"
+require_relative "cursor.rb"
+require "../board_class/board.rb"
+require "../player_class/player.rb"
+require "../player_class/human_player.rb"
+require "../player_class/computer_player.rb"
+require "../chess_pieces/modules/slideable.rb"
+require "../chess_pieces/modules/stepable.rb"
+
+
 
 
 class Game

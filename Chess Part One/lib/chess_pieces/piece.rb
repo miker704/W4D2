@@ -11,9 +11,10 @@ class Piece
         @pos=pos
     end
 
-    def moves()
+    # def moves()
 
-    end
+
+    # end
 
     def to_s()
 
@@ -24,7 +25,7 @@ class Piece
     end
     
     def valid_moves()
-
+        self.
     end
 
     def pos=(val)

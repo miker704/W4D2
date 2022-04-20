@@ -20,7 +20,7 @@ class NullPiece < Piece
     end
     
     def symbol
-        return "____"
+        return "_"
     end
 
 end

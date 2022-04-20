@@ -1,3 +1,6 @@
+require_relative "game.rb"
+# require "../board_class/board.rb"
+
 
 class Display
 

@@ -9,7 +9,7 @@ class Rook < Piece
 
   
     def initialize(color,board,pos)
-        super()
+        super(color,board,pos)
     
     end
 
@@ -21,9 +21,10 @@ class Rook < Piece
 
     end
 
-   
+#    valid moves
     def valid_moves()
-        
+        # if next move  7 >= x >=0 the same for y 
+         
 
     end
 
@@ -37,6 +38,12 @@ class Rook < Piece
     end
 
     private
+
+    def self.mov_dirs
+        self.horizontal_dirs
+
+    end
+
     def move_into_check?(end_pos)
 
     end

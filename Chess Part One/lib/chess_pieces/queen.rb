@@ -9,6 +9,7 @@ class Queen < Piece
     include Slideable
 
     def initialize(color,board,pos)
+
         super()
     
     end
@@ -23,7 +24,7 @@ class Queen < Piece
 
    
     def valid_moves()
-        
+
 
     end
 
@@ -37,6 +38,14 @@ class Queen < Piece
     end
 
     private
+
+    def self.mov_dirs
+        
+
+    end
+
+
+
     def move_into_check?(end_pos)
 
     end

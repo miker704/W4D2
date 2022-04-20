@@ -1,6 +1,6 @@
 
 module Slideable
-  
+    attr_reader :horizontal_dirs ,:diagonal_dirs
     def horizontal_dirs
         return HORIZONTAL_DIRS
     end
@@ -22,9 +22,10 @@ module Slideable
     private
         HORIZONTAL_DIRS=[]
         DIAGONAL_DIRS=[]
-        VERTICAL_DIRS=[]
+        # VERTICAL_DIRS=[]
 
         def mov_dirs
+            raise NotImplementedError
 
         end
         #nice function name
