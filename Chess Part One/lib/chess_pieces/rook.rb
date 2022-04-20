@@ -9,38 +9,32 @@ class Rook < Piece
 
   
     def initialize(color,board,pos)
-        super(color,board,pos)
+        super(color,board,[0,0])
     
     end
 
-    def moves()
-
-    end
 
     def to_s()
 
     end
 
-#    valid moves
-    def valid_moves()
-        # if next move  7 >= x >=0 the same for y 
-         
+# #    valid moves
+#     def valid_moves()
+#         # if next move  7 >= x >=0 the same for y
+#     end
 
-    end
-
-    def pos=(val)
-
-    end
+    # def pos=(val)
+    
+    # end
     # check if symbol has changed or not 
     def Symbol
         return :R
-
     end
 
     private
 
-    def self.mov_dirs
-        self.horizontal_dirs
+    def mov_dirs
+        return horizontal_dirs
 
     end
 
